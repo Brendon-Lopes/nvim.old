@@ -1,14 +1,12 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
+-- local term_opts = { silent = true }
 
 -- Shorten function name
 local keymap = vim.keymap.set
 
 --Remap space as leader key
-keymap("", "<Space>", "<Nop>", opts)
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+-- keymap("", "<Space>", "<Nop>", opts)
 
 -- Modes
 --   normal_mode = "n",
@@ -54,12 +52,10 @@ keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 -- Select entire file
 keymap("n", "<C-a>", "gg<S-v>G", opts)
 
-
 -- Insert --
--- Press jk fast to exit insert mode 
+-- Press jk fast to exit insert mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
-
 
 -- Visual --
 -- Stay in indent mode
@@ -69,7 +65,6 @@ keymap("v", ">", ">gv^", opts)
 -- Move text up and down
 keymap("v", "<A-j>", ":m '>+1<CR>gv=gv", opts)
 keymap("v", "<A-k>", ":m '<-2<CR>gv=gv", opts)
-
 
 -- Visual Block --
 -- Move text up and down
@@ -83,11 +78,9 @@ keymap("x", "<A-k>", ":m '<-2<CR>gv=gv", opts)
 -- Buffer
 keymap("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to last buffer", noremap = true, silent = true })
 
-
 -- Terminal --
 -- Better terminal navigation
 -- keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 -- keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
