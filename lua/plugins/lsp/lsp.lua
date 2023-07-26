@@ -55,20 +55,7 @@ M.setup = function()
 					},
 				})
 
-				require("mason").setup({})
-
-				require("mason-lspconfig").setup({
-					ensure_installed = { "tsserver", "lua_ls" },
-
-					handlers = {
-						lsp.default_setup,
-
-						lua_ls = function()
-							require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
-						end,
-					},
-				})
-
+				require("plugins.lsp.mason").setup()
 				require("plugins.lsp.null-ls").setup()
 				require("plugins.lsp.cmp").setup()
 			end,
