@@ -58,6 +58,7 @@ M.setup = function()
 				require("plugins.lsp.mason").setup()
 				require("plugins.lsp.null-ls").setup()
 				require("plugins.lsp.cmp").setup()
+        require("plugins.lsp.handlers").setup()
 			end,
 		},
 	}

@@ -1,3 +1,3 @@
 return {
-  require("plugins.lsp.lsp").setup(),
+	require("plugins.lsp.lsp").setup(),
 }
