@@ -70,6 +70,7 @@ M.setup = function()
 				})
 
 				require("plugins.lsp.null-ls").setup()
+				require("plugins.lsp.cmp").setup()
 			end,
 		},
 	}

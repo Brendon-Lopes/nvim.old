@@ -1,5 +1,4 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+require("config")
 
 -- Lazy
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -16,8 +15,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("plugins")
-
-require("config")
 
 -- Colorscheme
 vim.cmd.colorscheme("tokyonight")
