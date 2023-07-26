@@ -4,8 +4,8 @@ return {
 		lazy = false,
 		priority = 1000,
 		opts = {
-			style = "moon",
-      transparent = true,
+			style = "night",
+			transparent = false,
 			styles = {
 				sidebars = "transparent",
 				floats = "transparent",
@@ -13,4 +13,3 @@ return {
 		},
 	},
 }
-
