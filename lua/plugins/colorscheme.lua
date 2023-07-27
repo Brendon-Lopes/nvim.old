@@ -14,6 +14,13 @@ return {
 	},
 	{
 		"rebelot/kanagawa.nvim",
+		config = function()
+			require("kanagawa").setup({
+				transparent = true,
+				keywordStyle = { italic = true },
+				statementStyle = { bold = true },
+			})
+		end,
 	},
 	{
 		"rafamadriz/neon",
