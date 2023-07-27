@@ -1,5 +1,8 @@
 return {
 	{
+		"nvim-treesitter/playground",
+	},
+	{
 		"nvim-treesitter/nvim-treesitter",
 		build = ":TSUpdate",
 		opts = {
@@ -24,6 +27,9 @@ return {
 				"vimdoc",
 				"yaml",
 				"c_sharp",
+			},
+			playground = {
+				enable = true,
 			},
 		},
 		config = function(_, opts)
