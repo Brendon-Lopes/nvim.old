@@ -10,19 +10,23 @@ return {
 				require("telescope").load_extension("fzf")
 			end,
 		},
+		{
+			"nvim-telescope/telescope.nvim",
+		},
 	},
 	keys = {
-		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Buffers" },
-		{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Buffers" },
+		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "File" },
+		{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Grep" },
 		{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
-		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Buffers" },
+		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
 	},
 	opts = function()
 		local actions = require("telescope.actions")
+		local trouble = require("trouble.providers.telescope")
 
 		return {
 			defaults = {
-				prompt_prefix = " ",
+				prompt_prefix = "  ",
 				selection_caret = " ",
 
 				mappings = {
@@ -34,6 +38,11 @@ return {
 						["<C-k>"] = actions.move_selection_previous,
 
 						["<esc>"] = actions.close,
+
+						["<C-t>"] = trouble.open_with_trouble,
+					},
+					n = {
+						["<C-t>"] = trouble.open_with_trouble,
 					},
 				},
 			},

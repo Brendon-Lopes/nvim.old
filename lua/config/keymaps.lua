@@ -56,9 +56,6 @@ keymap("n", "<A-k>", ":m .-2<CR>==")
 -- Select entire file
 keymap("n", "<C-a>", "gg<S-v>G")
 
--- Buffers
-keymap("n", "<leader>bb", "<cmd>e #<cr>", "Switch to last buffer")
-
 -- Insert --
 -- Press jk fast to exit insert mode
 -- keymap("i", "jk", "<ESC>")
