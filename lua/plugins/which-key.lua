@@ -34,6 +34,10 @@ return {
 			f = {
 				name = "Find",
 			},
+			g = {
+				name = "Git",
+				g = { "<cmd>LazyGit<cr>", "Lazy" },
+			},
 		}
 
 		wk.register(mappings, opts)
