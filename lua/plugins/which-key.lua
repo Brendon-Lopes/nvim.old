@@ -39,7 +39,7 @@ return {
 				g = { "<cmd>LazyGit<cr>", "Lazy" },
 			},
 			s = {
-				name = "Grep",
+				name = "Search",
 			},
 		}
 
