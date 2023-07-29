@@ -41,6 +41,17 @@ return {
 			s = {
 				name = "Search",
 			},
+			p = {
+				name = "Session",
+				s = { "<cmd>PossessionSave<cr>", "Save" },
+				l = { "<cmd>PossessionLoad<cr>", "Load" },
+				r = { "<cmd>PossessionRename<cr>", "Rename" },
+				c = { "<cmd>PossessionClose<cr>", "Close" },
+				d = { "<cmd>PossessionDelete<cr>", "Delete" },
+				w = { "<cmd>PossessionShow<cr>", "Show" },
+				t = { "<cmd>Telescope possession list<cr>", "List" },
+				m = { "<cmd>PossessionMigrate<cr>", "Migrate" },
+			},
 		}
 
 		wk.register(mappings, opts)
