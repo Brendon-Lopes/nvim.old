@@ -38,6 +38,9 @@ return {
 				name = "Git",
 				g = { "<cmd>LazyGit<cr>", "Lazy" },
 			},
+			s = {
+				name = "Grep",
+			},
 		}
 
 		wk.register(mappings, opts)
