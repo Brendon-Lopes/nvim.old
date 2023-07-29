@@ -59,4 +59,13 @@ return {
 			})
 		end,
 	},
+	{
+		"sainnhe/gruvbox-material",
+		config = function()
+			vim.g.gruvbox_material_background = "medium" -- hard, medium, soft
+			vim.g.gruvbox_material_foreground = "material" -- material, mix, original
+			vim.g.gruvbox_material_enable_italic = 1
+			vim.g.gruvbox_material_transparent_background = 1
+		end,
+	},
 }
