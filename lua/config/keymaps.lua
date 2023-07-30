@@ -56,6 +56,9 @@ keymap("n", "<A-k>", ":m .-2<CR>==")
 -- Select entire file
 keymap("n", "<C-a>", "gg<S-v>G")
 
+-- remove highlight
+keymap("n", "<leader>h", ":noh<CR>")
+
 -- Insert --
 -- Press jk fast to exit insert mode
 -- keymap("i", "jk", "<ESC>")
