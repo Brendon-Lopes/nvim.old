@@ -5,7 +5,7 @@ return {
 		priority = 1000,
 		opts = {
 			style = "night",
-			transparent = false,
+			transparent = true,
 			styles = {
 				sidebars = "transparent",
 				floats = "transparent",
@@ -19,21 +19,9 @@ return {
 				transparent = true,
 				keywordStyle = { italic = true },
 				statementStyle = { bold = true },
+				commentStyle = { italic = true },
+				terminalColors = true,
 			})
-		end,
-	},
-	{
-		"rafamadriz/neon",
-		config = function()
-			local g = vim.g
-
-			g.neon_style = "doom"
-			g.neon_transparent = true
-			g.neon_italic_keywork = true
-			g.neon_italic_boolean = true
-			g.neon_italic_function = true
-			g.neon_italic_variable = true
-			g.neon_bold = false
 		end,
 	},
 	{
@@ -50,7 +38,7 @@ return {
 		config = function()
 			require("nightfox").setup({
 				options = {
-					transparent = false,
+					transparent = true,
 					dim_inactive = false,
 					styles = {
 						comments = "italic", -- <-- not working
