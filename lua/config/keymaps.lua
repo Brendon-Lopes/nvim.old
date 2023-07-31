@@ -53,9 +53,6 @@ keymap("n", "<A-h>", ":bprevious<CR>")
 keymap("n", "<A-j>", ":m .+1<CR>==")
 keymap("n", "<A-k>", ":m .-2<CR>==")
 
--- Select entire file
-keymap("n", "<C-a>", "gg<S-v>G")
-
 -- remove highlight
 keymap("n", "<leader>h", ":noh<CR>")
 
