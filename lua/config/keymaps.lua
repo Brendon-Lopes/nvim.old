@@ -4,7 +4,7 @@
 -- local keymap = vim.keymap.set
 
 local function keymap(mode, oldmap, newmap, desc)
-	vim.keymap.set(mode, oldmap, newmap, { noremap = true, silent = true, desc = desc })
+  vim.keymap.set(mode, oldmap, newmap, { noremap = true, silent = true, desc = desc })
 end
 
 --Remap space as leader key
@@ -26,8 +26,6 @@ keymap("n", "<C-h>", "<C-w>h")
 keymap("n", "<C-j>", "<C-w>j")
 keymap("n", "<C-k>", "<C-w>k")
 keymap("n", "<C-l>", "<C-w>l")
-
-keymap("n", "<leader>e", ":Lex 30<cr>")
 
 -- Better viewing
 keymap("n", "n", "nzzzv")
