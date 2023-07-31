@@ -41,8 +41,11 @@ function M.insert_namespace()
 	-- get cursor line
 	local line = api.nvim_win_get_cursor(0)[1]
 
-	-- insert namespace in the line above the cursor
-	api.nvim_buf_set_lines(bufnr, line - 1, line - 1, false, { namespace })
+	-- insert namespace on the line above and one empty line
+	api.nvim_buf_set_lines(bufnr, line - 1, line - 1, false, { namespace, "" })
+
+	-- go to insert mode
+	api.nvim_command("startinsert")
 end
 
 return M
