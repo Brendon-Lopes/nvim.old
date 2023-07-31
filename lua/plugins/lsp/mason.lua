@@ -6,7 +6,7 @@ M.setup = function()
 	local servers = {
 		"tsserver",
 		"lua_ls",
-		"omnisharp",
+		"csharp_ls",
 		"dockerls",
 		"docker_compose_language_service",
 	}
