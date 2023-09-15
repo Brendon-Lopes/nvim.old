@@ -54,6 +54,9 @@ keymap("n", "<A-k>", ":m .-2<CR>==")
 -- remove highlight
 keymap("n", "<leader>h", ":noh<CR>")
 
+-- Saving
+keymap("n", "<C-s>", ":w<CR>")
+
 -- Insert --
 -- Press jk fast to exit insert mode
 -- keymap("i", "jk", "<ESC>")
