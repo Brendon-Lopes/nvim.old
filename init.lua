@@ -18,8 +18,8 @@ require("lazy").setup("plugins")
 
 -- Colorscheme
 -- vim.cmd.colorscheme("tokyonight")
--- vim.cmd.colorscheme("kanagawa")
+vim.cmd.colorscheme("kanagawa-wave")
 -- vim.cmd.colorscheme("OceanicNext")
 -- vim.cmd.colorscheme("duskfox")
-vim.cmd.colorscheme("nightfox")
+-- vim.cmd.colorscheme("nightfox")
 -- vim.cmd.colorscheme("gruvbox-material")

@@ -10,8 +10,19 @@ M.setup = function()
     sources = {
       formatting.stylua,
 
-      formatting.prettier,
-      diagnostics.eslint,
+      formatting.prettierd.with({
+        filetypes = {
+          "javascript",
+          "javascriptreact",
+          "typescript",
+          "typescriptreact",
+          "vue",
+        },
+        env = {
+          PRETTIERD_DEFAULT_CONFIG = vim.fn.expand("~/.config/prettier/.prettierrc"),
+        },
+      }),
+      -- diagnostics.eslint,
     },
   })
 end
